@@ -20,7 +20,21 @@
         "height": 450
       },
       "resizable": true
-    }
+    },
+    "about": "Configure audio devices and MIDI settings for your system.",
+    "help": [
+      "Select audio device from list",
+      "Configure sample rate",
+      "Set up MIDI inputs/outputs"
+    ],
+    "docs": "https://zos-apps.github.io/audio-midi-setup",
+    "site": "https://github.com/zos-apps/audio-midi-setup",
+    "features": [
+      "Audio device configuration",
+      "MIDI device setup",
+      "Sample rate settings",
+      "Buffer size control"
+    ]
   },
   "scripts": {
     "build": "tsup",
@@ -53,5 +67,13 @@
     "audio-midi-setup",
     "macos",
     "desktop"
-  ]
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
