@@ -1,5 +1,5 @@
 {
-  "name": "@anthropic/audio-midi-setup",
+  "name": "@zos-apps/audio-midi-setup",
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -11,9 +11,14 @@
     "icon": "🎛️",
     "category": "system",
     "description": "Configure audio devices and MIDI settings",
-    "permissions": ["audio"],
+    "permissions": [
+      "audio"
+    ],
     "window": {
-      "defaultSize": { "width": 600, "height": 450 },
+      "defaultSize": {
+        "width": 600,
+        "height": 450
+      },
       "resizable": true
     }
   },
@@ -30,5 +35,23 @@
     "@types/react-dom": "^18.3.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
-  }
+  },
+  "description": "Configure audio devices and MIDI settings",
+  "homepage": "https://zos-apps.github.io/audio-midi-setup",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/audio-midi-setup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/audio-midi-setup/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "audio-midi-setup",
+    "macos",
+    "desktop"
+  ]
 }
