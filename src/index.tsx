@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface AudioMIDISetupProps {
   onClose: () => void;
@@ -32,7 +32,7 @@ const mockMIDIDevices: MIDIDevice[] = [
   { id: '2', name: 'Virtual MIDI Port', type: 'output', connected: true },
 ];
 
-const AudioMIDISetup: React.FC<AudioMIDISetupProps> = ({ onClose }) => {
+const AudioMIDISetup: React.FC<AudioMIDISetupProps> = ({ onClose: _onClose }) => {
   const [tab, setTab] = useState<'audio' | 'midi'>('audio');
   const [audioDevices, setAudioDevices] = useState(mockAudioDevices);
   const [midiDevices] = useState(mockMIDIDevices);
